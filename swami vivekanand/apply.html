@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admission Form</title>
+  <style>
+    body { font-family: Arial; background: #f2f4f7; padding: 20px; }
+    .container { max-width: 600px; margin: auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 0 10px #ccc; }
+    h2 { text-align: center; color: #004aad; }
+    label { font-weight: bold; margin-top: 15px; display: block; }
+    input, select, textarea {
+      width: 100%; padding: 10px; margin-top: 5px;
+      border: 1px solid #ccc; border-radius: 5px;
+    }
+    button {
+      background-color: #004aad; color: white; padding: 10px 20px;
+      border: none; border-radius: 5px; margin-top: 20px; cursor: pointer;
+    }
+    button:hover { background-color: #003580; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Admission Form (Nursery to 12th)</h2>
+    
+    <form action="https://formsubmit.co/shaswatshukla780@gmail.com" method="POST">
+
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://yourdomain.com/thankyou.html">
+
+      <label>Student Name:</label>
+      <input type="text" name="Student Name" required>
+
+      <label>Class Applying For:</label>
+      <select name="Class" required>
+        <option value="">--Select Class--</option>
+        <option>Nursery</option><option>Jr. KG</option><option>Sr. KG</option>
+        <option>1st</option><option>2nd</option><option>3rd</option><option>4th</option>
+        <option>5th</option><option>6th</option><option>7th</option><option>8th</option>
+        <option>9th</option><option>10th</option>
+        <option>11th Science</option><option>12th Science</option>
+      </select>
+
+      <label>Date of Birth:</label>
+      <input type="date" name="DOB" required>
+
+      <label>Parent Name:</label>
+      <input type="text" name="Parent Name" required>
+
+      <label>Mobile Number:</label>
+      <input type="tel" name="Phone" pattern="[0-9]{10}" required>
+
+      <label>Email (optional):</label>
+      <input type="email" name="Email">
+
+      <label>Address:</label>
+      <textarea name="Address" rows="3" required></textarea>
+
+      <button type="submit">Submit Application</button>
+    </form>
+  </div>
+</body>
+</html>

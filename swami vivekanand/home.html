@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Swami Vivekanand Vidyalay</title>
+  <link rel="stylesheet" href="home.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<style>/* Footer Styles */
+.footer {
+  background-color: #001f3f;
+  color: white;
+  padding: 25px 15px 10px;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 100%;
+  margin-left: 10px; /* Align with sidebar */
+  margin-right: 0;
+  animation: fadeIn 1s ease-in;
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  animation: slideUp 1.2s ease-in-out;
+}
+
+.footer-logo {
+  flex: 1 1 220px;
+  text-align: left;
+  animation: zoomIn 1s ease-in-out;
+}
+
+.footer-logo img {
+  width: 50px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  box-shadow: 0 0 10px rgba(0, 172, 237, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.footer-logo img:hover {
+  transform: scale(1.1);
+}
+
+.footer-logo h3 {
+  color: #00aced;
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+.footer-logo p {
+  color: #ccc;
+  font-size: 0.85rem;
+}
+
+.footer-section {
+  flex: 1 1 180px;
+}
+
+.footer-section h4 {
+  color: #00aced;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 5px;
+  color: #ddd;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  color: #00aced;
+  text-decoration: underline;
+}
+
+.footer-social .social-icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.footer-social .social-icons a {
+  color: #ddd;
+  font-size: 1.3rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer-social .social-icons a:hover {
+  color: #00aced;
+  transform: scale(1.1);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 25px;
+  padding-top: 12px;
+  font-size: 0.85rem;
+  color: #aaa;
+  border-top: 1px solid #444;
+  animation: fadeIn 1.2s ease;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer {
+    margin-left: 0;
+    text-align: center;
+    padding: 25px 10px 10px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  .footer-logo,
+  .footer-section {
+    flex: 1 1 100%;
+    margin-bottom: 18px;
+  }
+
+  .footer-social .social-icons {
+    justify-content: center;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+</style>
+<body>
+  <div class="container-flex">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo-box">
+        <img src="svvlogo.png" alt="School Logo" class="logo" />
+        <h2>Swami Vivekanand Vidyalay</h2>
+      </div>
+      <ul>
+        <li><a href="home.html"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+        <li><a href="admissions.html"><i class="fas fa-user-graduate"></i> Admissions</a></li>
+        <li><a href="academics.html"><i class="fas fa-book"></i> Academics</a></li>
+        <li><a href="faculty.html"><i class="fas fa-chalkboard-teacher"></i> Faculty</a></li>
+        <li><a href="gallery.html"><i class="fas fa-camera"></i> Gallery</a></li>
+        <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Hero Section -->
+      <section class="hero-section" data-aos="zoom-in">
+        <div class="hero-overlay">
+          <h1>Welcome to Swami Vivekanand Vidyalay</h1>
+          <p>Empowering young minds with wisdom, knowledge, and discipline</p>
+          <a href="admissions.html" class="cta-btn">Enroll Now</a>
+        </div>
+      </section>
+
+      <!-- Features Section -->
+      <section class="features" data-aos="fade-up">
+        <h2>Why Choose Us?</h2>
+        <div class="features-grid">
+          <div class="feature-box" data-aos="fade-right">
+            <i class="fas fa-star"></i>
+            <h3>Experienced Faculty</h3>
+            <p>Highly qualified and dedicated teachers to guide every student.</p>
+          </div>
+          <div class="feature-box" data-aos="fade-up">
+            <i class="fas fa-laptop-code"></i>
+            <h3>Modern Infrastructure</h3>
+            <p>Smart classrooms, science labs, computer lab, and library.</p>
+          </div>
+          <div class="feature-box" data-aos="fade-left">
+            <i class="fas fa-users"></i>
+            <h3>Holistic Development</h3>
+            <p>We promote co-curricular & extra-curricular activities equally.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Highlights Section -->
+      <section class="highlights" data-aos="fade-up">
+        <h2>School Highlights</h2>
+        <ul>
+          <li>🏅 100% Board Results for past 5 years</li>
+          <li>🎨 Active participation in cultural and science exhibitions</li>
+          <li>⚽ State-level achievements in sports</li>
+        </ul>
+      </section>
+
+      <!-- Principal Message -->
+      <section class="principal-message" data-aos="fade-right">
+        <h2>Message from Principal</h2>
+        <p>“At Swami Vivekanand Vidyalay, we aim to create confident and morally strong citizens. We believe education must go beyond books and foster leadership.” – Mr. Rajesh Sharma</p>
+      </section>
+
+      <!-- Events Section -->
+      <section class="events" data-aos="fade-left">
+        <h2>Upcoming Events</h2>
+        <ul>
+          <li>🎓 Parent-Teacher Meeting – June 15</li>
+          <li>🎉 Independence Day Celebration – August 15</li>
+          <li>🏆 Inter-school Quiz Competition – September 5</li>
+        </ul>
+      </section>
+
+      <!-- Mini Gallery -->
+      <section class="mini-gallery" data-aos="zoom-in">
+        <h2>Our Campus in Glimpse</h2>
+        <div class="gallery-grid">
+          <img src="classroom.avif" alt="Classroom"/>
+          <img src="lib.jpg" alt="Library" />
+          <img src="ground.avif" alt="Sports Ground" />
+        </div>
+      </section>
+
+      <!-- Contact Box -->
+      <section class="contact-box" data-aos="fade-up">
+        <h2>Get in Touch</h2>
+        <p><i class="fas fa-phone"></i> +91-1234567890</p>
+        <p><i class="fas fa-envelope"></i> contact@svvschool.com</p>
+        <p><i class="fas fa-map-marker-alt"></i> Malad, Mumbai, India</p>
+      </section>
+
+      <!-- Footer -->
+     <footer class="footer" data-aos="fade-up">
+      <div class="footer-container">
+        <!-- Logo + School Name -->
+        <div class="footer-section footer-logo">
+          <img src="svvlogo.png" alt="SVV Logo">
+          <h3>Swami Vivekanand Vidyalay</h3>
+          <p>Inspiring Young Minds Since 2001</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="home.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+            <li><a href="admissions.html"><i class="fas fa-user-graduate"></i> Admissions</a></li>
+            <li><a href="academics.html"><i class="fas fa-book"></i> Academics</a></li>
+            <li><a href="faculty.html"><i class="fas fa-chalkboard-teacher"></i> Faculty</a></li>
+            <li><a href="gallery.html"><i class="fas fa-camera"></i> Gallery</a></li>
+            <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <p><i class="fa-solid fa-location-dot"></i> Malad, Mumbai, India</p>
+          <p><i class="fa-solid fa-phone"></i> +91 98765 43210</p>
+          <p><i class="fa-solid fa-envelope"></i> admissions@vivekanandvidyalay.edu.in</p>
+        </div>
+
+        <!-- Social Icons -->
+        <div class="footer-section footer-social">
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        &copy; 2025 Swami Vivekanand Vidyalay. Made with ❤️ for Education.
+      </div>
+    </footer>
+  </main>
+</div>
+
+
+
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+</body>
+</html>
