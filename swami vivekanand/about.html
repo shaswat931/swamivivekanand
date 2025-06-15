@@ -11,23 +11,29 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
-<div class="container-flex">
+<div class="hamburger" onclick="toggleSidebar()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
 
-  <aside class="sidebar">
-    <div class="logo-box">
-      <img src="svvlogo.png" alt="School Logo" class="logo" />
-      <h2>Swami Vivekanand Vidyalay</h2>
-    </div>
-    <ul>
-      <li><a href="home.html"><i class="fas fa-home"></i> Home</a></li>
-      <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
-      <li><a href="admissions.html"><i class="fas fa-user-graduate"></i> Admissions</a></li>
-      <li><a href="academics.html"><i class="fas fa-book"></i> Academics</a></li>
-      <li><a href="faculty.html"><i class="fas fa-chalkboard-teacher"></i> Faculty</a></li>
-      <li><a href="gallery.html"><i class="fas fa-camera"></i> Gallery</a></li>
-      <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
-    </ul>
-  </aside>
+  <div class="container-flex">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo-box">
+        <img src="svvlogo.png" alt="School Logo" class="logo" />
+        <h2>Swami Vivekanand Vidyalay</h2>
+      </div>
+      <ul>
+        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+        <li><a href="admissions.html"><i class="fas fa-user-graduate"></i> Admissions</a></li>
+        <li><a href="academics.html"><i class="fas fa-book"></i> Academics</a></li>
+        <li><a href="faculty.html"><i class="fas fa-chalkboard-teacher"></i> Faculty</a></li>
+        <li><a href="gallery.html"><i class="fas fa-camera"></i> Gallery</a></li>
+        <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+      </ul>
+    </aside>
 
   <main class="main-content">
     <div class="header-flex" data-aos="zoom-in">
@@ -163,10 +169,14 @@
 
 <script src="home.js"></script>
 <script>
-  AOS.init({
-    duration: 1000,
-    once: true
-  });
-</script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+
+    function toggleSidebar() {
+      document.querySelector('.sidebar').classList.toggle('active');
+    }
+  </script>
 </body>
 </html>
